@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form>
+      <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+      <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+      <button id="valider"  onclick="affichage()" name ="valider">Valider</button>
+    </form>
+    <script>
+      function affichage(){
+      var first = document.getElementById('premier_nombre').value;
+      var second = document.getElementById('deuxieme_nombre').value;
+      var nombre1 = parseInt(first);
+      var nombre2 = parseFloat(second);
+      var nombre3 = nombre1 * nombre2;
+      alert(nombre3);
+      }
+    </script>
+  </body>
+</html>
